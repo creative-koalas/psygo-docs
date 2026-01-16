@@ -87,7 +87,7 @@ const config: Config = {
           position: 'left',
           label: '用户指南',
         },
-        {to: '/blog', label: '博客Blog', position: 'left'},
+        {to: '/blog', label: '公司博客', position: 'left'},
         // {
         //   href: 'https://github.com/facebook/docusaurus',
         //   label: 'GitHub',
