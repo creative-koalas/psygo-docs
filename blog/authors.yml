@@ -2,24 +2,10 @@ trentfellbootman:
   name: 龚易明
   title: 创意考拉创始人 & CEO
   # url: https://linkedin.com/in/yangshun
-  # image_url: https://github.com/yangshun.png
+  image_url: /img/trent-fellbootman-avatar.png
   # page: true
-  # socials:
-  #   x: yangshunz
+  socials:
+    x: TFellbootman
   #   linkedin: yangshun
-  #   github: yangshun
+    github: Trent-Fellbootman
   #   newsletter: https://www.greatfrontend.com
-
-# slorber:
-#   name: Sébastien Lorber
-#   title: Docusaurus maintainer
-#   url: https://sebastienlorber.com
-#   image_url: https://github.com/slorber.png
-#   page:
-#     # customize the url of the author page at /blog/authors/<permalink>
-#     permalink: '/all-sebastien-lorber-articles'
-#   socials:
-#     x: sebastienlorber
-#     linkedin: sebastienlorber
-#     github: slorber
-#     newsletter: https://thisweekinreact.com
