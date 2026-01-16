@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1024" height="1024"
+     viewBox="0 0 1024 1024">
+
+  <!-- opaque white disk -->
+  <circle cx="512" cy="512" r="512" fill="#ffffff"/>
+
+  <!-- inner black disks: identical radius, centers on a triangular lattice -->
+  <circle cx="378.383" cy="282.929" r="100.923" fill="#000000"/>
+  <circle cx="583.193" cy="282.959" r="100.923" fill="#000000"/>
+
+  <circle cx="480.772" cy="460.307" r="100.923" fill="#000000"/>
+  <circle cx="658.126" cy="562.695" r="100.923" fill="#000000"/>
+
+  <circle cx="480.774" cy="665.094" r="100.923" fill="#000000"/>
+  <circle cx="658.138" cy="767.495" r="100.923" fill="#000000"/>
+</svg>
