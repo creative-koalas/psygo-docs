@@ -1,4 +1,4 @@
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+product-update:
+  label: 产品更新
+  permalink: /product-update
+  description: 产品更新

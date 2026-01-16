@@ -1,27 +1,25 @@
 ---
 slug: welcome
-title: 欢迎使用Psygo！
+title: Psygo现已发布测试版本！
 authors: [trentfellbootman]
-tags: [hello]
+tags: [product-update]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+从2025年5月到现在，我们创意考拉团队开发迭代了3个Psygo大版本。
+从一开始连做个PPT发邮箱都费劲，到如今支持无限上下文，
+甚至能在**全链路搭载国产模型**的情况下自行完成AI应用从产品设计到部署上线全流程，
+我们做了大量的工程化工作，攻克了一个又一个的技术难题。
 
-Here are a few tips you might find useful.
+**今天，我们高兴地宣布Psygo测试版的正式发布！**
 
-<!-- truncate -->
+当然，目前的测试版还不完美，在多任务、交互即时性等方面仍有不小的提升空间，
+但如今的Psygo已远不只是实验室里的一个玩具，
+而是配的上“AI劳动力”这个称号的，能自主完成复杂任务、交付价值的颠覆性AI产品。
 
-Simply add Markdown files (or folders) to the `blog` directory.
+我们欢迎大家试用Psygo，更欢迎大家将试用过程中发现的问题反馈给我们，
+帮助我们更好地改进Psygo，**在Psygo的发展历史上留下你的一笔**！
 
-Regular blog authors can be added to `authors.yml`.
+由于服务器资源有限，且为了给每个用户平等的试用机会，
+我们只能按先来后到的顺序，为每个用户提供18小时的试用时间，敬请谅解。
 
-The blog post date can be extracted from filenames, such as:
-
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
-
-A blog post folder can be convenient to co-locate blog post images:
-
-The blog supports tags as well!
-
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+[点击这里试用Psygo！](https://psygoai.com/apply)
