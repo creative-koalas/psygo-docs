@@ -2,4 +2,4 @@
 sidebar_position: 1
 ---
 
-# Psygo Documentation
+# Psygo用户指南
