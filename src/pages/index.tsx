@@ -21,7 +21,12 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Psygo用户指南
+            快速上手
+          </Link>
+          <Link
+            className="button button--outline button--secondary button--lg"
+            to="/docs/use-cases">
+            常见使用场景
           </Link>
         </div>
       </div>
@@ -33,8 +38,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="PsyGo 用户指南"
+      description="了解 PsyGo 的工作方式，并按场景快速找到适合交给 PsyGo 的任务类型。">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -1,57 +1,55 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  to: string;
+  eyebrow: string;
   description: ReactNode;
+  cta: string;
 };
 
 const FeatureList: FeatureItem[] = [
-  // {
-  //   title: 'Easy to Use',
-  //   Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-  //   description: (
-  //     <>
-  //       Docusaurus was designed from the ground up to be easily installed and
-  //       used to get your website up and running quickly.
-  //     </>
-  //   ),
-  // },
-  // {
-  //   title: 'Focus on What Matters',
-  //   Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-  //   description: (
-  //     <>
-  //       Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-  //       ahead and move your docs into the <code>docs</code> directory.
-  //     </>
-  //   ),
-  // },
-  // {
-  //   title: 'Powered by React',
-  //   Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-  //   description: (
-  //     <>
-  //       Extend or customize your website layout by reusing React. Docusaurus can
-  //       be extended while reusing the same header and footer.
-  //     </>
-  //   ),
-  // },
+  {
+    title: '先理解 PsyGo 怎么工作',
+    to: '/docs/intro',
+    eyebrow: '快速上手',
+    description:
+      '先建立正确预期：PsyGo 更像远程实习生，不是聊天机器人，也不会读心。',
+    cta: '查看入门说明',
+  },
+  {
+    title: '按工作类型找可落地场景',
+    to: '/docs/use-cases',
+    eyebrow: '常见使用场景',
+    description:
+      '从文档、表格、调研、PPT、研发到经营分析，快速找到最接近你日常工作的用法。',
+    cta: '查看场景目录',
+  },
+  {
+    title: '了解产品动态和新内容',
+    to: '/blog',
+    eyebrow: '公司博客',
+    description:
+      '如果你想看更新记录、产品说明或团队发布内容，可以从博客开始。',
+    cta: '前往博客',
+  },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, to, eyebrow, description, cta}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+      <Link className={styles.card} to={to}>
+        <p className={styles.eyebrow}>{eyebrow}</p>
+        <Heading as="h3" className={styles.title}>
+          {title}
+        </Heading>
+        <p className={styles.description}>{description}</p>
+        <span className={styles.cta}>{cta}</span>
+      </Link>
     </div>
   );
 }
@@ -60,9 +58,13 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className={styles.sectionHeader}>
+          <Heading as="h2">从这里开始最省时间</Heading>
+          <p>如果你是第一次用 PsyGo，先看怎么用；如果你已经有任务，直接按场景找。</p>
+        </div>
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {FeatureList.map((props) => (
+            <Feature key={props.title} {...props} />
           ))}
         </div>
       </div>
