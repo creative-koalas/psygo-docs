@@ -2,6 +2,7 @@ import {startTransition, useState} from 'react';
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import {PRODUCT_NAME} from '@site/src/constants/product';
 import styles from './styles.module.css';
 
 type Step = {
@@ -35,14 +36,14 @@ const steps: Step[] = [
     body: (
       <>
         <p className={styles.lead}>
-          第一次用 PsyGo，不用先研究所有按钮。顺着这 5 步看完，就知道该怎么交任务。
+          第一次用 {PRODUCT_NAME}，不用先研究所有按钮。顺着这 5 步看完，就知道该怎么交任务。
         </p>
 
         <div className={styles.featureGrid}>
           <section className={styles.card}>
             <span className={styles.cardLabel}>你会看到</span>
             <ul className={styles.list}>
-              <li>PsyGo 到底是什么</li>
+              <li>{PRODUCT_NAME} 到底是什么</li>
               <li>任务怎么说更清楚</li>
               <li>发完以后该怎么配合</li>
             </ul>
@@ -65,13 +66,13 @@ const steps: Step[] = [
   },
   {
     id: 'mindset',
-    title: '先把 PsyGo 当成远程实习生',
-    label: '理解 PsyGo',
+    title: `先把 ${PRODUCT_NAME} 当成远程实习生`,
+    label: `理解 ${PRODUCT_NAME}`,
     body: (
       <>
         <div className={styles.summaryCard}>
           <span className={styles.cardLabel}>一句话</span>
-          <p>把 PsyGo 当成一个能力很强的远程实习生；把 App 当成和 TA 沟通的微信。</p>
+          <p>把 {PRODUCT_NAME} 当成一个能力很强的远程实习生；把 App 当成和 TA 沟通的微信。</p>
         </div>
 
         <div className={styles.quadGrid}>
@@ -147,7 +148,7 @@ const steps: Step[] = [
           </section>
           <section className={styles.card}>
             <span className={styles.stepNum}>3</span>
-            <p>PsyGo 做完了，或缺信息时，再回来找你。</p>
+            <p>{PRODUCT_NAME} 做完了，或缺信息时，再回来找你。</p>
           </section>
         </div>
 
@@ -172,7 +173,7 @@ const steps: Step[] = [
 
         <VideoLoop
           src="/videos/psygo-tutorial-command-and-close.mp4"
-          caption="交代清楚以后，可以先离开。PsyGo 会在需要时回来找你。"
+          caption={`交代清楚以后，可以先离开。${PRODUCT_NAME} 会在需要时回来找你。`}
         />
       </>
     ),
@@ -227,7 +228,7 @@ const steps: Step[] = [
 
         <VideoLoop
           src="/videos/psygo-tutorial-complete-task.mp4"
-          caption="更理想的状态是：PsyGo 在自己的环境里把事做成，再把成果交回来。"
+          caption={`更理想的状态是：${PRODUCT_NAME} 在自己的环境里把事做成，再把成果交回来。`}
         />
       </>
     ),

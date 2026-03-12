@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
+import {PRODUCT_NAME} from '@site/src/constants/product';
 import styles from './styles.module.css';
 
 type FeatureItem = {
@@ -14,11 +15,11 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '先理解 PsyGo 怎么工作',
+    title: `先理解 ${PRODUCT_NAME} 怎么工作`,
     to: '/docs/intro',
     eyebrow: '快速上手',
     description:
-      '先建立正确预期：PsyGo 更像远程实习生，不是聊天机器人，也不会读心。',
+      `先建立正确预期：${PRODUCT_NAME} 更像远程实习生，不是聊天机器人，也不会读心。`,
     cta: '查看入门说明',
   },
   {
@@ -60,7 +61,7 @@ export default function HomepageFeatures(): ReactNode {
       <div className="container">
         <div className={styles.sectionHeader}>
           <Heading as="h2">从这里开始最省时间</Heading>
-          <p>如果你是第一次用 PsyGo，先看怎么用；如果你已经有任务，直接按场景找。</p>
+          <p>如果你是第一次用 {PRODUCT_NAME}，先看怎么用；如果你已经有任务，直接按场景找。</p>
         </div>
         <div className="row">
           {FeatureList.map((props) => (

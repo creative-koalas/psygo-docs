@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import {PRODUCT_NAME} from '@site/src/constants/product';
 
 import styles from './index.module.css';
 
@@ -38,8 +39,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title="PsyGo 用户指南"
-      description="了解 PsyGo 的工作方式，并按场景快速找到适合交给 PsyGo 的任务类型。">
+      title={`${PRODUCT_NAME} 用户指南`}
+      description={`了解 ${PRODUCT_NAME} 的工作方式，并按场景快速找到适合交给 ${PRODUCT_NAME} 的任务类型。`}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

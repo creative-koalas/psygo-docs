@@ -1,12 +1,13 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {PRODUCT_NAME} from './src/constants/product';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Psygo用户指南',
-  tagline: '工作交给Psygo，你去做别的吧。',
+  title: `${PRODUCT_NAME} 用户指南`,
+  tagline: `工作交给${PRODUCT_NAME}，你去做别的吧。`,
   favicon: 'img/logo.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -75,7 +76,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Psygo用户指南',
+      title: `${PRODUCT_NAME} 用户指南`,
       logo: {
         alt: 'Creative Koalas',
         src: 'img/logo.svg',

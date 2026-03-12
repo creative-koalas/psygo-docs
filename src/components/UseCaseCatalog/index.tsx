@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import {PRODUCT_NAME} from '@site/src/constants/product';
 import styles from './styles.module.css';
 
 type BadgeTone = 'neutral' | 'success' | 'warning';
@@ -336,7 +337,7 @@ function QuickStart(): ReactNode {
       </div>
       <p className={styles.quickStartFooter}>
         如果你还不确定怎么提需求，先回到 <Link to="/docs/intro">快速上手</Link>，
-        按“目标 + 背景 + 交付要求 + 限制条件”的方式给 PsyGo 下任务。
+        按“目标 + 背景 + 交付要求 + 限制条件”的方式给 {PRODUCT_NAME} 下任务。
       </p>
     </section>
   );
@@ -349,7 +350,7 @@ export default function UseCaseCatalog(): ReactNode {
         <div className={styles.overviewHeader}>
           <Heading as="h2">按工作类型快速查</Heading>
           <p>
-            这页适合做“能不能交给 PsyGo”的快速判断。先选大类，再展开具体场景，避免一次看完一整页长清单。
+            这页适合做“能不能交给 {PRODUCT_NAME}”的快速判断。先选大类，再展开具体场景，避免一次看完一整页长清单。
           </p>
         </div>
         <div className={styles.statsGrid}>
