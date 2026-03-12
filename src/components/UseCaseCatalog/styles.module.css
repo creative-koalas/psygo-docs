@@ -1,0 +1,288 @@
+.wrapper {
+  display: grid;
+  gap: 2rem;
+}
+
+.overview {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 24px;
+  padding: 1.5rem;
+  background:
+    radial-gradient(circle at top right, rgba(46, 133, 85, 0.12), transparent 32%),
+    var(--ifm-background-surface-color);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+}
+
+.overviewHeader {
+  margin-bottom: 1.5rem;
+}
+
+.overviewHeader h2 {
+  margin-bottom: 0.5rem;
+}
+
+.overviewHeader p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.statCard {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 18px;
+  background: var(--ifm-background-color);
+}
+
+.statValue {
+  color: var(--ifm-color-primary);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.statLabel {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.95rem;
+}
+
+.tabs {
+  margin-top: -0.25rem;
+}
+
+.sectionPanel {
+  display: grid;
+  gap: 1rem;
+}
+
+.sectionIntro {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.sectionIntro h2 {
+  margin: 0;
+}
+
+.sectionIntro p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 20px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.cardHeader {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.cardTitle {
+  margin: 0;
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.badgeNeutral {
+  background: rgba(46, 133, 85, 0.1);
+  color: var(--ifm-color-primary-darkest);
+}
+
+.badgeSuccess {
+  background: rgba(59, 130, 246, 0.12);
+  color: #1d4ed8;
+}
+
+.badgeWarning {
+  background: rgba(245, 158, 11, 0.15);
+  color: #b45309;
+}
+
+.summary {
+  margin: 0;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.metaList {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.metaItem {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  background: var(--ifm-background-color);
+}
+
+.metaLabel {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.metaValue {
+  color: var(--ifm-color-emphasis-800);
+}
+
+.details {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding-top: 0.9rem;
+}
+
+.details summary {
+  cursor: pointer;
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+  list-style: none;
+}
+
+.details summary::-webkit-details-marker {
+  display: none;
+}
+
+.sceneList {
+  margin: 0.9rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.sceneList li + li {
+  margin-top: 0.4rem;
+}
+
+.note {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background: rgba(245, 158, 11, 0.12);
+  color: #92400e;
+}
+
+.quickStart {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 24px;
+  background: var(--ifm-background-surface-color);
+}
+
+.quickStart h2 {
+  margin: 0;
+}
+
+.quickStartGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.quickStartCard {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 18px;
+  background: var(--ifm-background-color);
+}
+
+.quickStartCard p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.quickStartLabel {
+  color: var(--ifm-color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.quickStartFooter {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+@media screen and (max-width: 996px) {
+  .statsGrid,
+  .cardGrid,
+  .quickStartGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .overview,
+  .quickStart {
+    padding: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    gap: 1.5rem;
+  }
+
+  .statValue {
+    font-size: 1.35rem;
+  }
+
+  .card,
+  .statCard,
+  .quickStartCard {
+    padding: 1rem;
+  }
+}
+
+:global([data-theme='dark']) .overview {
+  background:
+    radial-gradient(circle at top right, rgba(79, 221, 191, 0.14), transparent 36%),
+    var(--ifm-background-surface-color);
+}
+
+:global([data-theme='dark']) .badgeNeutral {
+  background: rgba(79, 221, 191, 0.14);
+  color: #a7f3d0;
+}
+
+:global([data-theme='dark']) .badgeSuccess {
+  background: rgba(96, 165, 250, 0.16);
+  color: #bfdbfe;
+}
+
+:global([data-theme='dark']) .badgeWarning,
+:global([data-theme='dark']) .note {
+  background: rgba(251, 191, 36, 0.16);
+  color: #fde68a;
+}
